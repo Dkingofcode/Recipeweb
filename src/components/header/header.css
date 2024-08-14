@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.header .links{
+    
+    
+}
+
+.header .links .navLinks{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+}
+
+.header .socialLinks{
+    border: 1px solid grey;
+}
+
+.header .socialLinks img{
+    
+    padding: 0px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+

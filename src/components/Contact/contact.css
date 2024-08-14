@@ -1,0 +1,46 @@
+.contact{
+    background: #E7F9FD;
+    border: 3px solid #E7F9FD;
+    margin: 50px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    padding: 50px 0px;
+}
+
+.contact .form{
+    border: 3px solid white;
+     background: white;
+     display: flex;
+     justify-content: center;
+     margin: 0 530px;
+     border-radius: 10px; 
+}
+
+.contact .subscribe{
+    background-color: black;
+    color: white;
+    padding: 20px 35px;
+    border-radius: 10px;
+}
+
+.contact .form input{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact .salad{
+    position: absolute;
+    bottom: 0px;
+}
+
+.contact .vegetable{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+

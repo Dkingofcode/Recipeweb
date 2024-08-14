@@ -1,0 +1,43 @@
+.category{
+    border: 3px solid white;
+    margin-bottom: 80px;
+}
+
+.head{
+    border: 1px solid white;
+    display: flex;
+    padding: 0px 6px;
+    justify-content: space-between;
+}
+
+.head h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.head .categoryBtn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E7FAFE;
+}
+
+
+.category .categoryCards{
+   display: flex;
+   border: 3px solid white;
+   justify-content: space-between;
+   padding: 3px 10px;
+   flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+

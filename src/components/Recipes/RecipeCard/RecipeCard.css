@@ -1,0 +1,44 @@
+.recipeCard{
+    width: 375px;
+    border-radius: 20px;
+     background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+    font-size: 16px;   
+    padding-bottom: 50px;    
+    text-align: left;
+}
+
+.recipeCard .Posterimg{
+    
+    border-radius: 20px;
+}
+
+.recipeCard h3{
+    font-size: 27px;
+    margin-bottom: 10px;
+    width: 360px;
+    padding: 0px 30px;
+}
+
+.recipeCard .cardFooter{
+    display: flex;
+    padding: 0px 30px;
+    font-size: 17px;
+    gap: 20px;
+}
+
+.recipeCard .cardFooter div{
+    display: flex;
+    
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+

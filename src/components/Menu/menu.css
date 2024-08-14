@@ -1,0 +1,29 @@
+.menu{
+    border: 4px solid white;
+}
+
+.menu .header{
+    display: flex;
+    border: 1px solid white;
+
+}
+
+.menu .menuBlock{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

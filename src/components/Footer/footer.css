@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 50px;
+    gap: 20px;
+}
+
+.footer hr{
+    border: 1px solid black;
+    font-size: 40px;
+}
+
+.footer .top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .top .footerNav{
+    display: flex;
+    gap: 30px;
+}
+
+.footer .bottom{
+    display: flex;
+    justify-content: space-between;
+}

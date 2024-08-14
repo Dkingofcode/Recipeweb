@@ -1,0 +1,43 @@
+.review{
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+    margin-bottom: 100px;
+    padding-bottom: 90px;
+}
+
+.review .review-header{
+   border: 1px solid white;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 20px; 
+}
+
+
+.review .reviewBlock{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 40px;
+}
+
+.review .reviewBtn{
+    border: 2px solid black;
+    border-radius: 10px;;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 50px;
+    background-color: black;
+    color: white;
+   align-items: center;
+}
+
+
+
+

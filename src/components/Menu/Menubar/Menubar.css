@@ -1,0 +1,64 @@
+.menuBar{
+    border: 4px solid rgb(245, 245, 245);
+}
+
+.menuBar .posterImg{
+   border-radius: 20px;
+}
+
+.menuBar .menuFooter{
+    
+    display: flex;
+    gap: 20px;
+}
+
+.menuBar h4{
+    width: 280px;
+
+    font-size: 19px;
+}
+
+.menuBar .menuFooter div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
