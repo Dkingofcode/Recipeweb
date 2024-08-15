@@ -117,9 +117,12 @@
 
 .Ingredients .firstSection{    
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.Ingredients .firstSection p{
+.Ingredients .firstSection h3{
     border-bottom: 1px solid gray;
     padding: 20px 10px;
     margin: 0px 20px;
@@ -134,17 +137,88 @@
 }
 
 
-.Ingredients .secondSection {
+.Ingredients .secondSection{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
 
+.Ingredients .secondSection article {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+gap: 10px;
+}
+
+.Ingredients .secondSection article img{
+    border-radius: 12px;
+    width: 250px;
+    height: 170px;
+}
+
+.Ingredients .secondSection article h3{
+  font-size: 20px
+}
+
+
+.Ingredients .secondSection .oddCard{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
 
 }
 
+.Ingredients  .secondSection .backcover{
+    position: relative;
+}
+
+.Ingredients .secondSection .frontpic{
+    position: absolute;
+    right: 120px;
+    top: 40px;
+    color: white;
+}
+
+
+.Ingredients .secondSection .oddCard .title{
+    position: absolute;
+    bottom: 400px;
+    left: 70px;
+    color: white;
+}
+
+.Ingredients .secondSection .oddCard .link{
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+    color: white;
+}
+
+
+
 .directions{
-    border: 2px solid firebrick;
-    margin-top: 100px;
+    
+    margin-top: 10px;
     margin-bottom: 50px;
     padding: 70px 50px;
 }
+
+.directions h1 {
+    
+    padding: 50px 10px;
+}
+
+.directions h2{
+    padding: 30px 2px;
+}
+
+.directions .directionImg{
+   padding: 30px 3px;
+}
+
+
 
 .Extras{
     padding: 90px 50px;

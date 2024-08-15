@@ -4,7 +4,7 @@ import logo from "../../assets/Foodieland..png";
 import facebookLogo from "../../assets/001-facebook.png";
 import twitterLogo from "../../assets/003-twitter.png";
 import instagramLogo from "../../assets/004-instagram.png";
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -13,7 +13,9 @@ function Header() {
     return (
         <>
         <div className="header">
+           <Link to={"/"}> 
            <img src={logo} width={90} height={20} alt= "recipeLogo" />
+           </Link>
 
 
            <div className='links'>

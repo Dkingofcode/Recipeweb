@@ -3,6 +3,19 @@
     text-align: center;
 }
 
+.recipe h1{
+    padding: 30px 5px;
+
+   font-size: 50px;
+}
+
+.recipe .Subtext{
+    color: gray;
+  width: 500px;
+  padding: 30px 5px;
+  margin: 0 auto;
+}
+
 .recipe  .recipeBlock{
     display: grid;
     border: 4px solid white;
@@ -12,11 +25,10 @@
 }
 
 
-
-
 .recipe .recipeBlock .oddCard{
     position: relative;
     text-align: center;
+    display: flex;
 }
 
 .recipe  .recipeBlock .backcover{
@@ -25,7 +37,7 @@
 
 .recipe .recipeBlock .frontpic{
     position: absolute;
-    right: 70px;
+    right: 100px;
     top: 40px;
 }
 
@@ -34,16 +46,17 @@
     position: absolute;
     color: black;
     bottom: 400px;
-    left: 100px;
-    border: 4px solid red;
+    left: 80px;
+    color: white;
+    
 }
 
 .recipe .recipeBlock .oddCard .link{
     position: absolute;
     color: black;
     bottom: 10px;
-    border: 4px solid red;;
-    left: 150px;
+    left: 120px;
+    color: white;
 }
 
 

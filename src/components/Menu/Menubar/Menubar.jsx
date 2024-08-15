@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Menubar({ title, handleClick, smText, img }) {
  
     return (
-     <Link style={{ textDecoration: "none", color: "black" }} to={"/details"}>
+     <Link style={{  textDecoration: "none", color: "black" }} to={"/details"}>
     <div className='menuBar'>
         <img className='posterImg' src={img} />
         <div className="imageicon">  

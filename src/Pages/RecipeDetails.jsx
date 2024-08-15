@@ -24,6 +24,12 @@ import fruitSalad from "../assets/image 26 (8).png"
 import Beef  from "../assets/image 26 (9).png"
 import Friedrice from "../assets/image 26 (10).png"
 import cauliflower from "../assets/image 26 (11).png"
+import directImg from "../assets/Rectangle 23.png"
+import Foodplate from "../assets/01.png";
+import BgGreen from "../assets/Mask Group (1).png";
+import MeatBalls from "../assets/image 26 (4).png";
+import Chickecrice from "../assets/image 26 (6).png";
+import Pasta from "../assets/image 26 (7).png";
 
 
 function RecipeDetails() {
@@ -137,17 +143,17 @@ return (
 
      <h2>For main Dish</h2>
 
-    <p><input type="checkbox" checked = "true"  /></p>
-    <p> <input type="checkbox" checked = "false"  /></p>
-    <p> <input type="checkbox" checked = "false"  /></p>
-    <p> <input type="checkbox" checked = "false"  /></p>
+    <h3> <input type="radio"   /> Lorem ipsum dolor amet</h3>
+    <h3> <input type="radio"   /> Lorem ipsum dolor amet </h3>
+    <h3> <input type="radio"  /> Lorem ipsum dolor amet </h3>
+    <h3> <input type="radio"  /> Lorem ipsum dolor amet </h3>
     
   <h2>For the sauce</h2>
 
-<p><input type="checkbox" checked = "true"  /></p>
-<p> <input type="checkbox" checked = "false"  /></p>
-<p> <input type="checkbox" checked = "false"  /></p>
-<p> <input type="checkbox" checked = "false"  /></p>
+<h3><input className='check' width={100} height={20} type="radio" /> Lorem ipsum dolor amet  </h3>
+<h3> <input type="radio"   /> Lorem ipsum dolor amet </h3>
+<h3> <input type="radio"   /> Lorem ipsum dolor amet </h3>
+<h3> <input type="radio"   /> Lorem ipsum dolor amet </h3>
 
     
       </div>
@@ -156,7 +162,7 @@ return (
        <h2>Other Recipe</h2>
 
        <article>
-        <img />
+        <img src={MeatBalls} />
        
         <div>
         <h3>Chicken Meatball with Creamy Chees...</h3>
@@ -166,7 +172,7 @@ return (
        </article>
 
        <article>
-        <img />
+        <img src={Chickecrice} />
        
         <div>
         <h3>The Creamiest Creamy Chicken an...</h3>
@@ -176,7 +182,7 @@ return (
        </article>
 
        <article>
-        <img />
+        <img src={Pasta} />
        
         <div>
         <h3>The Best Easy One Pot Chicken and Rice</h3>
@@ -185,7 +191,14 @@ return (
         
        </article>
 
-       <img  />
+       <div className='oddCard'>
+         <img className='backcover' src={BgGreen} />     
+         <img className='frontpic' src={Foodplate} />
+          <h3 className='title'>Don't forget to eat healthy food</h3> 
+         <p className='link'>www.foodieland.com</p>
+         </div>
+
+    
      </div>
      </div>
 
@@ -194,24 +207,23 @@ return (
         <div className='directions'>
          <h1>Directions</h1>
 
-        <h2> <input type='checkbox' checked="false" /> 1. Lorem ipsum dolor sit amet </h2>
+        <h2> <input width={100} height={20} style={{ border: "3px solid red", width: "13px" }} className='check' type='radio' /> 1. Lorem ipsum dolor sit amet </h2>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat itaque est at distinctio,<br /> minima recusandae porro soluta explicabo qui illo laborum quas dolorem cupiditate aliquam rem omnis dolorum eius? Laboriosam eligendi corporis a cum!</p>
-         <img />
+         <img className='directionImg' src={directImg} />
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat itaque est at distinctio,<br /> minima recusandae porro soluta explicabo qui illo laborum quas dolorem cupiditate aliquam rem omnis dolorum eius? Laboriosam eligendi corporis a cum!</p>
          <hr  />
          
 
-         <h2> <input type='checkbox' checked="false" /> 2. Lorem ipsum dolor sit amet </h2>
+         <h2> <input className='check' type='radio' checked="false" /> 2. Lorem ipsum dolor sit amet </h2>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat itaque est at distinctio,<br /> minima recusandae porro soluta explicabo qui illo laborum quas dolorem cupiditate aliquam rem omnis dolorum eius? Laboriosam eligendi corporis a cum!</p> 
 
          <hr  />
 
-         <h2> <input type='checkbox' checked="false" /> 3. Lorem ipsum dolor sit amet </h2>
+         <h2> <input className='check' type='radio' checked="false" /> 3. Lorem ipsum dolor sit amet </h2>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat itaque est at distinctio,<br /> minima recusandae porro soluta explicabo qui illo laborum quas dolorem cupiditate aliquam rem omnis dolorum eius? Laboriosam eligendi corporis a cum!</p> 
 
          <hr  />
-  
   </div>
 
            

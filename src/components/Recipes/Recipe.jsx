@@ -17,7 +17,7 @@ function Recipe() {
     <div className='recipe'>
       <h1>Simple and tasty recipes</h1>
     
-      <p>Lorem officiis delectus reiciendis provident! Alias reprehenderit suscipit totam, quos eius vero dolor!</p>
+      <p className='Subtext'>Lorem officiis delectus reiciendis provident! Alias reprehenderit suscipit totam, quos eius vero dolor!</p>
        
         <div className='recipeBlock'> 
        <RecipeCard img={firstImg} Bgtext={"Big and Juicy Wagyu Beef Cheeseburger"} smtext={"snack"} /> 
