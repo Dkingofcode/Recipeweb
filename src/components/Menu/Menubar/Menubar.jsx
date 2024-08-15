@@ -2,10 +2,14 @@ import React from 'react';
 import "./Menubar.css";
 import stopwatch from "../../../assets/stopwatch.png";
 import cutlery from "../../../assets/forkKitchenKnife.png";
+import { Link } from "react-router-dom";
 
-function Menubar({ title, smText, img }) {
+
+
+function Menubar({ title, handleClick, smText, img }) {
  
     return (
+     <Link style={{ textDecoration: "none", color: "black" }} to={"/details"}>
     <div className='menuBar'>
         <img className='posterImg' src={img} />
         <div className="imageicon">  
@@ -29,6 +33,7 @@ function Menubar({ title, smText, img }) {
 
 
     </div>
+    </Link>
   )
 }
 

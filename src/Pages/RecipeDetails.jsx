@@ -2,16 +2,28 @@ import React from 'react';
 import { useState } from 'react';
 //import reactLogo from './assets/react.svg';
 //import viteLogo from '/vite.svg';
-import Header from "./components/header/Header";
-import './App.css';
-import Hero from './components/hero/Hero';
-import Category from './components/Category/Category';
-import Recipes from "./components/Recipes";
-import AboutUs from "./components/AboutUs";
-import Reviews from "./components/Reviews";
-import Menu from "./components/Menu";
-import Contact from "./components/Contact";
+import Header from "../components/header/Header";
+import '../App.css';
+import jonhsmith from "../assets/johnsmith.jpg";
+import "./RecipeDetails.css";
+import Hero from '../components/hero/Hero';
+import Category from '../components/Category/Category';
+import Recipes from "../components/Recipes/Recipe";
+import AboutUs from "../components/AboutUs/AboutUs";
+import Reviews from "../components/Reviews/Reviews";
+import Menu from "../components/Menu/menu";
+import Contact from "../components/Contact/Contact";
 import Menubar from '../components/Menu/Menubar/Menubar'; 
+import stopWatch from "../assets/stopWatch.png";
+import forkandKnife from "../assets/forkKitchenKnife.png";
+import Footer from "../components/Footer/Footer";
+import herodetailPic from "../assets/Mask Group (2).png"
+import share from "../assets/share.png";
+import printer from "../assets/printer.png";
+import fruitSalad from "../assets/image 26 (8).png"
+import Beef  from "../assets/image 26 (9).png"
+import Friedrice from "../assets/image 26 (10).png"
+import cauliflower from "../assets/image 26 (11).png"
 
 
 function RecipeDetails() {
@@ -21,13 +33,15 @@ return (
 
        <div className='hero'>
 
-        <div> 
+      <div className='heroHeader'> 
+        
+       <div> 
        <h1>Health Japanese Fried Rice</h1>
 
-       <div>
+       <div className='info'>
 
-         <div>  
-         <p><img src={} /></p>
+         <div className='snippet'>  
+         <p><img className='johnsmith' src={jonhsmith} /></p>
 
          <div>
            <b>John Smith</b>
@@ -35,8 +49,8 @@ return (
          </div>
        </div>
 
-       <div>
-        <img  />
+       <div className='snippet'>
+        <img src={stopWatch} width={30} height={30} />
 
         <div>
            <h4>PREP TIME</h4>
@@ -44,8 +58,8 @@ return (
         </div>
        </div>
 
-       <div>
-         <img  />
+       <div className='snippet'>
+         <img src={stopWatch} width={30} height={30}  />
          
          <div>
           <h4>COOK TIME</h4>
@@ -53,52 +67,62 @@ return (
          </div>
        </div>
 
-       <div>
-        <img />
+       <div className='snippet'>
+        <img style={{ alignItems: "center", textAlign: "center"}} src={forkandKnife} width={25} height={32} />
         <p>Chicken</p>
        </div>
 
        </div>
-      </div>
     
 
+    <div>
+    <img className='detailPic' src={herodetailPic} />
+    </div>
 
-       <div>
+
+    </div>
+
+
+       <div className='heroNutrition'>
+        <div className='heroBtn'>
+
         <div>
        <p>
-        <img  />
+        <img src={printer}  />
        </p>
-       <p>PRINT</p>
+       <h6>PRINT</h6>
         </div>
 
       <div>
       <p>
-       <img  />
+       <img src={share} />
      </p>
-     <p>SHARE</p>
+     <h6>SHARE</h6>
      </div>  
+     </div>
 
-     <div>
+     <div className='NutriInfo'>
       <h2>Nutrition Information</h2>
      
-     <p> Calories</p> 
-     <p> Total Fat</p> 
-     <p> Protein</p> 
-     <p> Carbohydrate</p> 
-     <p> Cholesterol</p> 
-    
+     <ul>
+     <li> Calories</li> 
+     <li> Total Fat</li> 
+     <li> Protein</li> 
+     <li> Carbohydrate</li> 
+     <li> Cholesterol</li> 
+     </ul>
+     
 
 
     <p>Lorem ipsum dolor sit amet.</p>
      </div>
 
     </div>
-    
-    
-      </div>
+    </div>  
+    </div>
     
 
-     <p>Lorem ipsum dolor sit amet consectetur 
+     <p className='description'>Lorem ipsum dolor sit amet consectetur 
         adipisicing elit. Ex sunt, tempora, atque 
         quia perferendis quos sed similique est cum aut 
         tenetur! Ullam error velit voluptatem commodi dolorem 
@@ -113,7 +137,7 @@ return (
 
      <h2>For main Dish</h2>
 
-     <p><input type="checkbox" checked = "true"  /></p>
+    <p><input type="checkbox" checked = "true"  /></p>
     <p> <input type="checkbox" checked = "false"  /></p>
     <p> <input type="checkbox" checked = "false"  /></p>
     <p> <input type="checkbox" checked = "false"  /></p>
@@ -163,7 +187,7 @@ return (
 
        <img  />
      </div>
-     
+     </div>
 
 
 
@@ -187,6 +211,8 @@ return (
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat itaque est at distinctio,<br /> minima recusandae porro soluta explicabo qui illo laborum quas dolorem cupiditate aliquam rem omnis dolorum eius? Laboriosam eligendi corporis a cum!</p> 
 
          <hr  />
+  
+  </div>
 
            
            <Contact />
@@ -195,11 +221,11 @@ return (
 
             <h1>You may like these more.</h1>
 
-            <div>
-            <Menubar  />
-            <Menubar  />
-            <Menubar  />
-            <Menubar  />
+            <div className='recipe'>
+            <Menubar img={fruitSalad} title={"Mixed Tropical Fruit Salad with SuperFood Bossts"} smText={"Healthy"} />
+            <Menubar img={Beef} title={"Big and Juicy Wagyu Beef Cheeseburger"} smText={"Western"} />
+            <Menubar img={Friedrice} title={"Healthy Japanese Fried Rice With Asparagus"} smText={"Healthy"} />
+            <Menubar img={cauliflower} title={"Cauliflower Walnut Vegetarian Taco Meat"} smText={"Eastern"} />
             </div>
             
           </div>
@@ -207,16 +233,15 @@ return (
           
           <Footer  />
 
-        </div>
-
-
+      
+       
     <div>
     
     </div>  
     
     </div>
 
-    </div>
+    
   )
 }
 

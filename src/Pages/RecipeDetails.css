@@ -1,0 +1,170 @@
+.hero{
+
+   display: flex;
+   background-color: white;
+   padding: 30px 40px;
+}
+
+.heroHeader{
+    display: flex;
+    padding: 10px 50px;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    gap: 90px;
+}
+
+ .hero h1{
+  font-size: 100px;
+  font-weight: 700;
+  padding: 10px 1px;
+}
+
+.heroHeader .info{
+    display: flex;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+.heroHeader .info .snippet{
+    display: flex;
+    border-right: 1px solid black;
+    padding-right: 10px;
+    gap: 5px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.heroHeader .info .snippet .johnsmith{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+.heroHeader  .detailPic{
+  width: 750px;
+  height: 500px;
+  border: 0px solid black;
+}
+
+.heroHeader .heroNutrition .heroBtn{
+     margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    padding: 2px 20px;
+}
+
+.heroHeader .heroNutrition .heroBtn div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.heroHeader .heroNutrition .heroBtn div p{
+    background-color: #E7FAFE;
+    border: 4px solid #E7FAFE;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.heroHeader .heroNutrition .NutriInfo{
+    background-color: #E7FAFE;
+    padding: 20px 50px;
+    width: 400px;
+    height: 550px;
+    border-radius: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.NutriInfo ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.NutriInfo ul li{
+    border-bottom: 1px solid gray;
+    padding: 20px 0px;
+}
+
+.NutriInfo p{
+    margin-top: 30px;
+}
+
+.heroHeader h1{
+    font-size: 40px;
+}
+
+
+.description{
+    text-align: center;
+    padding: 10px 5px;
+    margin-bottom: 50px;
+}
+
+
+.Ingredients{
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-between;
+}
+
+.Ingredients .firstSection{    
+    width: 80%;
+}
+
+.Ingredients .firstSection p{
+    border-bottom: 1px solid gray;
+    padding: 20px 10px;
+    margin: 0px 20px;
+}
+
+.Ingredients .firstSection h1{
+    margin-bottom: 20px;
+}
+
+.Ingredients .firstSection input{
+    border: 3px solid red;
+}
+
+
+.Ingredients .secondSection {
+
+
+}
+
+.directions{
+    border: 2px solid firebrick;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 70px 50px;
+}
+
+.Extras{
+    padding: 90px 50px;
+}
+.Extras h1{
+    margin-bottom: 30px;
+    text-align:  center;
+}
+
+.Extras .recipe{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
